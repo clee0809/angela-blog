@@ -77,7 +77,7 @@ class Comment(db.Model):
     post_id = db.Column(db.Integer, ForeignKey("blog_posts.id"))
     parent_post = relationship("BlogPost", back_populates = "comments")
 
-db.create_all() ## after creating commented out
+#db.create_all() ## after creating commented out
 
 
 ## Initialize with flask application and default parameters
